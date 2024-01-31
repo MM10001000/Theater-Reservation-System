@@ -156,23 +156,30 @@ def filmcheck():
         my_text.delete("1.0", "end")
 
     def addfilm():
+        text_file = open("films.txt", 'w')
+        text_file.write(my_text.get(1.0, END))
         root = Tk()
         root.title('Add Film - ADMIN ONLY')
         root.geometry("600x500")
 
 
-        timeslot1_button = Button (root, text='Timeslot1 - 8:00')
+        timeslot1_button = Button (root, text='Time slot 1 - 8:00', command=print('Time slot 1 saved'))
         timeslot1_button.pack(pady=10)
 
-        timeslot2_button = Button (root, text='Timeslot2 - 11:00')
+        timeslot2_button = Button (root, text='Time slot 2 - 11:00', command=print('Time slot 2 saved'))
         timeslot2_button.pack(pady=10)
 
-        timeslot3_button = Button (root, text='Timeslot3 - 14:00')
+        timeslot3_button = Button (root, text='Time slot 3 - 14:00', command=print('Time slot 3 saved'))
         timeslot3_button.pack(pady=10)
 
-        timeslot4_button = Button (root, text='Timeslot4 - 17:00')
+        timeslot4_button = Button (root, text='Time slot 4 - 17:00', command=print('Time slot 4 saved'))
         timeslot4_button.pack(pady=10)
 
+        timeslot5_button = Button (root, text='Time slot 5 - 20:00', command=print('Time slot 5 saved'))
+        timeslot5_button.pack(pady=10)
+
+        timeslot6_button = Button (root, text='Time slot 6 - 21:00', command=print('Time slot 6 saved'))
+        timeslot6_button.pack(pady=10)
 
 
     my_text = Text(root, width=70, height=10)
