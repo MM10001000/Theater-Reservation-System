@@ -1,0 +1,1 @@
+This is a rudimentary theater reservation system. Various items are functional, chiefly the ability to save and write to a text, to print out seat selections, and selecting the time slot for new films. Several items need work, and I'm not terribly sure how to go about doing that.
